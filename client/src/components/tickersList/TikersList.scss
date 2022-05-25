@@ -1,0 +1,10 @@
+.ticker{
+    &__list{
+        flex: 0 1 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    
+}

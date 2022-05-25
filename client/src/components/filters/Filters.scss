@@ -1,0 +1,38 @@
+.filters{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 0;
+
+    &__item:not(:last-child){
+        margin-right: 10px;
+    }
+    &__item{
+        border: 1px solid rgba(72, 71, 71, 0.175);
+        border-radius: 20px;
+        padding: 5px 8px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    &__content{
+        display: flex;
+        flex: 0 1 40%;
+        justify-content: flex-start;
+    }
+    &__interval{
+        display: flex;
+        flex: 0 1 60%;
+        justify-content: flex-end;
+        align-items: center;
+        font-weight: 600;
+    }
+    &__text{
+        margin-right: 10px;
+    }
+    
+    .active{
+        color: blue;
+        border-color: none;
+        background-color: rgba(112, 112, 248, 0.133);
+    }
+}

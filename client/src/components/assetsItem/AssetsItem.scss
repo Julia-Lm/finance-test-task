@@ -1,0 +1,71 @@
+.assets{
+    &__item:first-child{
+        margin-top: 10px;
+    }
+    &__item{
+        
+        display: flex;
+        border-top: 1px solid rgba(72, 71, 71, 0.175);
+        padding: 9px 0;
+    }
+    &__title{
+        flex: 0 1 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items:flex-start;
+    }
+    &__icon{
+        border-radius: 5px;
+        background-color: rgba(0, 0, 255, 0.525);
+        color: #fff;
+        padding: 4px 8px;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    &__name{
+        font-weight: 500;
+    }
+
+    &__content{
+        flex: 0 1 40%;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: end;
+    }
+    &__change_percent{
+        background-color:rgba(72, 71, 71, 0.175);
+        padding: 5px 8px;
+        border-radius: 5px;
+        text-align: center;
+        margin-right: 15px;
+
+        &.fall{
+            color: red;
+            background-color: rgba(255, 0, 0, 0.148);
+        }
+        &.rise{
+            color: green;
+            background-color: rgba(0, 128, 0, 0.111);
+        }
+    }
+    &__add{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 2px;
+        border-radius: 50%;
+        font-size: 20px;
+        color: rgba(72, 71, 71, 0.719);
+        border: 1px solid rgba(72, 71, 71, 0.175);
+
+        &:hover{
+            background-color:rgba(72, 71, 71, 0.074);
+        }
+    }
+}

@@ -1,0 +1,104 @@
+.ticker{
+    &__item{
+        margin-top: 10px;
+        border-top: 1px solid rgba(72, 71, 71, 0.175);
+    }
+    &__link{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        color: #000;
+        font-weight: 600;
+    }
+    &__title{
+        flex: 0 1 40%;
+        display: flex;
+        align-items: center;
+    }
+    &__icon{
+        flex: 0 1 63px;
+        margin-right: 10px;
+        border-radius: 5px;
+        background-color: blue;
+        color: #fff;
+        padding: 5px 8px;
+        text-align: center;
+    }
+    &__name{
+        flex: 0 1 80%;
+        text-transform: uppercase;
+    }
+
+    &__content{
+        flex: 0 1 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr auto auto;
+        align-items: center;
+        
+    }
+    &__price{
+        text-align: center;
+    }
+    &__change{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &.fall{
+            color: red;
+        }
+        &.rise{
+            color: green;
+        }
+    }
+    &__arrow{
+            width: 12px;
+            height: 12px;
+            margin-right: 10px;
+
+            &.arrowUp{
+                background-image: url('../../resources/arrow/up-arrow.svg');
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+            &.arrowDown{
+                background-image: url('../../resources/arrow/down-arrow.svg');
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+        }
+    &__change_percent{
+        background-color:rgba(72, 71, 71, 0.175);
+        padding: 5px 8px;
+        border-radius: 5px;
+        text-align: center;
+
+        &.fall{
+            color: red;
+            background-color: rgba(255, 0, 0, 0.148);
+        }
+        &.rise{
+            color: green;
+            background-color: rgba(0, 128, 0, 0.111);
+        }
+    }
+    &__delete{
+        color: rgba(72, 71, 71, 0.719);
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 2px;
+        margin-left: 20px;
+
+        &:hover{
+            border-radius: 50%;
+            background-color:rgba(72, 71, 71, 0.074);
+        }
+    }
+    
+}
